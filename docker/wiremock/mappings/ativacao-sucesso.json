@@ -1,0 +1,15 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPath": "/provider/v1/activate",
+    "headers": {
+      "Idempotency-Key": { "matches": ".+" },
+      "X-Correlation-ID": { "matches": ".+" }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": { "Content-Type": "application/json" },
+    "jsonBody": { "status": "ACTIVATED" }
+  }
+}
